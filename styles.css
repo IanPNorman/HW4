@@ -1,0 +1,107 @@
+
+#MyTitle {
+	padding: 20px;
+	text-align: center;
+}
+
+#MyFoot {
+	text-align: center;
+	clear: both;
+}
+
+.set {
+	background-color: white;
+	border: 1px solid #ccc;
+	margin: 20px;
+	padding: 20px;
+	float: left;
+}
+
+
+.set h1 {
+	margin-bottom: 20px;
+}
+
+
+.set li {
+	width: 150px;
+	height: 30px;
+	background-color: #757575;
+	margin-bottom: 10px;
+	padding: 10px;
+}
+
+.set li:hover {
+	background-color: #999;
+}
+
+@media only screen and (max-width: 480px) {
+	.set {
+		width: 100%;
+		float: none;
+	}
+	
+	#MyTitle, #MyFoot {
+		clear: both;
+	}
+	
+	#Adiv, #Bdiv {
+		order: 1;
+	}
+	
+	#Cdiv, #Ddiv {
+		order: 2;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	#Adiv {
+		order: 1;
+	}
+	
+	#Cdiv {
+		order: 2;
+	}
+	
+	#Ddiv {
+		order: 3;
+	}
+	
+	#Bdiv {
+		order: 4;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	.set {
+		width: 100%;
+		float: none;
+	}
+	
+	#MyTitle, #MyFoot {
+		clear: both;
+	}
+	
+	#Adiv, #Bdiv, #Cdiv, #Ddiv {
+		order: initial;
+	}
+	
+	#Adiv {
+		order: 1;
+	}
+	
+	#Bdiv {
+		order: 2;
+	}
+	
+	#Cdiv {
+		order: 3;
+	}
+	
+	#Ddiv {
+		order: 4;
+	}
+}
+
+
+
